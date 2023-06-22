@@ -1,0 +1,15 @@
+@use './mixins' as *;
+
+.desktop {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.mobile {
+    @include desktop {
+        display: none;
+        ;
+    }
+}

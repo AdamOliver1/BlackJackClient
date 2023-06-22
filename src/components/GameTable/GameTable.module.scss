@@ -1,0 +1,13 @@
+@use "../../assets/sharedStyles/mixins.scss" as *;
+
+.container {
+    @include center;
+    background: #228b22;
+
+    // width: 800px;
+    // height: 600px;
+    // border-radius: 15px;
+    // background: #228b22; // Green color for the table
+    // padding: 20px;
+    // box-sizing: border-box;
+}

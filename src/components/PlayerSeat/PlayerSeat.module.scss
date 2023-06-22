@@ -1,0 +1,22 @@
+.container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.container:nth-child(1) {
+    left: 10%;
+}
+.container:nth-child(2) {
+    left: 30%;
+}
+.container:nth-child(3) {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container:nth-child(4) {
+    right: 30%;
+}
+.container:nth-child(5) {
+    right: 10%;
+}
