@@ -30,6 +30,11 @@ export const Home = () => {
     alert(`
 Welcome! Here are some quick guidelines for our game:
 
+-This is a multiplayer game designed for multiple sessions.
+  To enjoy the game, open different tabs in your browser, each representing a unique player.
+  After all the players have joined the room,
+  initiate the game by clicking the 'Start Game' button in any one of the tabs.
+
 - Your player indicator will be highlighted in blue.
 - The player whose turn it is will have their cards glowing.
 
