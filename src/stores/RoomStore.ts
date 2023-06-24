@@ -48,8 +48,8 @@ export const useRoomStore = create(persist<State>(
 
     }),
     {
-        name: 'bears_storage',     // unique name
-        getStorage: () => sessionStorage,   // (optional) by default the 'localStorage' is used
+        name: 'bears_storage',
+        getStorage: () => sessionStorage,
     }
 
 ));
