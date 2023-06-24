@@ -1,9 +1,5 @@
 @use "./animations" as *;
 
-@function random-color() {
-    @return rgb(random(256) - 1, random(256) - 1, random(256) - 1);
-}
-
 @function shadow() {
     @return pulse;
 }

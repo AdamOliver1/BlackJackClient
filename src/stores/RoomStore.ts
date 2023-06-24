@@ -1,7 +1,9 @@
 import { create } from 'zustand';
-import axios, { AxiosError } from 'axios';
+import { AxiosError } from 'axios';
 import { Room } from '../models/Room';
 import { GameState } from '../models/GameState';
+import { persist } from 'zustand/middleware';
+
 
 type State = {
     room: Room | null;
@@ -22,24 +24,33 @@ type State = {
     setIsHubConnected: (bool: boolean) => void;
 };
 
-export const useRoomStore = create<State>((set) => ({
-    room: null,
-    playerId: "",
-    playersTurnId: "",
-    gameId: "",
-    gameState: GameState.BEFORE_GAME,
-    isHubConnected: false,
-    winnersId: null,
-    loading: false,
-    error: null,
-    setGameId: (gameId: string) => set({ gameId }),
-    setGameState: (gameState: GameState) => set({ gameState }),
-    setWinnersId: (winnersId: string[] | null) => set({ winnersId }),
-    setIsHubConnected: (isHubConnected: boolean) => set({ isHubConnected }),
-    setRoom: (room: Room | null) => set({ room }),
-    setPlayerId: (playerId: string) => set({ playerId }),
-    setPlayersTurnId: (playersTurnId: string) => set({ playersTurnId }),
+export const useRoomStore = create(persist<State>(
+    (set) =>
+    ({
+        room: null,
+        playerId: "",
+        playersTurnId: "",
+        gameId: "",
+        gameState: GameState.BEFORE_GAME,
+        isHubConnected: false,
+        winnersId: null,
+        loading: false,
+        error: null,
+        setGameId: (gameId: string) => set({ gameId }),
+        setGameState: (gameState: GameState) => set({ gameState }),
+        setWinnersId: (winnersId: string[] | null) => set({ winnersId }),
+        setIsHubConnected: (isHubConnected: boolean) => set({ isHubConnected }),
+        setRoom: (room: Room | null) => set({ room }),
+        setPlayerId: (playerId: string) => set({ playerId }),
+        setPlayersTurnId: (playersTurnId: string) => set({ playersTurnId }),
 
 
 
-}));
+    }),
+    {
+        name: 'bears_storage',     // unique name
+        getStorage: () => sessionStorage,   // (optional) by default the 'localStorage' is used
+    }
+
+));
+

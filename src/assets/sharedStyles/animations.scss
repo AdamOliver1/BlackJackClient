@@ -1,6 +1,6 @@
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(50, 168, 82, 0.7);
+        box-shadow: 0 0 0 0 rgba(23, 3, 245, 0.7);
     }
     70% {
         box-shadow: 0 0 0 10px rgba(50, 168, 82, 0);
@@ -15,61 +15,6 @@
         box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00, 0 0 20px #ffcc00;
     }
     100% {
-        box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
-    }
-}
-
-@keyframes backgroundColorsChange {
-    0% {
-        background-color: red;
-    }
-
-    10% {
-        background-color: blue;
-    }
-
-    20% {
-        background-color: green;
-    }
-
-    30% {
-        background-color: yellow;
-    }
-
-    40% {
-        background-color: purple;
-    }
-
-    50% {
-        background-color: pink;
-    }
-
-    60% {
-        background-color: gray;
-    }
-
-    70% {
-        background-color: bisque;
-    }
-
-    80% {
-        background-color: orange;
-    }
-
-    90% {
-        background-color: randomColor();
-    }
-
-    100% {
-        background-color: randomColor();
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
+        box-shadow: 0 0 10px #050df6, 0 0 20px #050df6, 0 0 30px #050df6, 0 0 40px #050df6;
     }
 }

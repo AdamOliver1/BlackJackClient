@@ -1,4 +1,3 @@
-import { CardModel } from "./Card";
 import { PlayerModel as PlayerModel } from "./Player";
 
 export type Room = {

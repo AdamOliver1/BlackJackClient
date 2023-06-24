@@ -1,17 +1,17 @@
 @use "../../assets/sharedStyles/mixins.scss" as *;
 @use "../../assets/sharedStyles/animations.scss" as *;
 @use "../../assets/sharedStyles/functions.scss" as *;
+@use "../../assets/sharedStyles/variables.scss" as *;
 
 .container {
     width: 40px;
     height: 60px;
-    background: #fff;
+    background: $card-background;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 5px;
     box-sizing: border-box;
     color: #333;
-
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -26,10 +26,10 @@
 }
 
 .closed {
-    background: #353030;
-    color: #353030;
+    background: $closed-card-background;
+    color: $closed-card-background;
 }
 
 .opened {
-    background: #fff;
+    background: $card-background;
 }

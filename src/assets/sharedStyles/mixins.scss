@@ -1,17 +1,5 @@
 @use "./variables.scss" as *;
 
-@mixin desktop {
-    @media only screen and (min-width: 768px) {
-        @content;
-    }
-}
-
-@mixin mobile {
-    @media only screen and (max-width: 768px) {
-        @content;
-    }
-}
-
 @mixin center {
     display: flex;
     justify-content: center;
@@ -35,12 +23,4 @@
     @include desktop {
         display: none;
     }
-}
-
-@mixin content {
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 28px;
-    letter-spacing: 2.2px;
-    white-space: pre-wrap;
 }

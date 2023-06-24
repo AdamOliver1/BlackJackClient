@@ -2,10 +2,7 @@ import style from "./PlayerSeat.module.scss";
 import { PlayerModel } from "../../models/Player";
 import { useRoomStore } from "../../stores/RoomStore";
 import { Card } from "../Card/Card";
-import { useEffect } from "react";
-import { CardModel } from "../../models/Card";
 import { TableDirection } from "../../models/TableDirection";
-import { Suit } from "../../models/Suit";
 import { GameState } from "../../models/GameState";
 
 type PlayerSeatProps = {

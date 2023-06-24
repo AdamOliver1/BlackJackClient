@@ -1,10 +1,14 @@
 $primary-black: black;
 $table-background: repeating-linear-gradient(
     45deg,
-    rgb(0, 128, 0, 0.5),
-    rgb(0, 128, 0, 0.5) 10px,
-    rgb(16, 208, 89, 0.3) 10px,
+    rgb(0, 128, 0, 0.8),
+    rgb(0, 128, 0, 0.8) 10px,
+    rgb(16, 208, 89, 0.7) 10px,
     rgb(34, 8, 8) 20px
 );
 $text-color: white;
 $app-background: rgb(34, 35, 36);
+$card-background: white;
+$closed-card-background: #353030;
+$player-background: rgb(239, 199, 126);
+$button-bakground: #007bff;

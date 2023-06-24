@@ -3,11 +3,7 @@
 @use "../../assets/sharedStyles/functions.scss" as *;
 
 .container {
-    // position: absolute;
-    // text-align: center;
-    // @include center;
     display: flex;
-    // align-items: flex-end;
 }
 
 .left {
@@ -22,7 +18,7 @@
     transition: border 0.5s;
 
     animation: shadow() 1s infinite;
-    border: 5px solid #32a852;
+    border: 5px solid #050df6;
     width: 500px;
 }
 
