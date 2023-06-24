@@ -1,7 +1,8 @@
 import { CardModel } from "./Card";
 
 export type PlayerModel = {
-    name: string;
+    playerId: string;
     cards: CardModel[];
-    chips: number;
+    nextPlayer: PlayerModel | null;
+    isHandValid: boolean;
 };

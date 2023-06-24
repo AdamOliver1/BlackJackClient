@@ -1,0 +1,28 @@
+.button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.button:disabled:hover,
+.button:disabled:active {
+    /* Disable the hover effect when the button is disabled */
+    background-color: #007bff;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:active {
+    background-color: #003d80;
+}

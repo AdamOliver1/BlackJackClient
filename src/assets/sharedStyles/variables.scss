@@ -1,1 +1,10 @@
 $primary-black: black;
+$table-background: repeating-linear-gradient(
+    45deg,
+    rgb(0, 128, 0, 0.5),
+    rgb(0, 128, 0, 0.5) 10px,
+    rgb(16, 208, 89, 0.3) 10px,
+    rgb(34, 8, 8) 20px
+);
+$text-color: white;
+$app-background: rgb(34, 35, 36);

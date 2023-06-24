@@ -1,3 +1,7 @@
+@use "../../assets/sharedStyles/mixins.scss" as *;
+@use "../../assets/sharedStyles/animations.scss" as *;
+@use "../../assets/sharedStyles/functions.scss" as *;
+
 .container {
     width: 40px;
     height: 60px;
@@ -7,4 +11,25 @@
     padding: 5px;
     box-sizing: border-box;
     color: #333;
+
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.playerTurn {
+    border-radius: 5px;
+    transition: border 0.2s;
+
+    animation: shadow() 1.2s infinite;
+    border: 1.3px solid #32a852;
+}
+
+.closed {
+    background: #353030;
+    color: #353030;
+}
+
+.opened {
+    background: #fff;
 }
