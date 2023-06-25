@@ -28,7 +28,7 @@ Before you begin, ensure you have met the following requirements:
     ```
     npm run dev
     ```
-5. Open your browser and visit `http://localhost:3000` or the designated port to view the application.
+
 
 ## Features
 BlackJackClient offers joining live multiplayer games.
